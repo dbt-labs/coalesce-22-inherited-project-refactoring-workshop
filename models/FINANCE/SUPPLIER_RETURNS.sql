@@ -9,7 +9,7 @@ top10s as (
             ROW_NUMBER() OVER(PARTITION BY month ORDER BY month DESC, parts_returned DESC, total_revenue_lost DESC) as seq
         FROM (
             SELECT 
-                date_trunc('month', order_date) as month
+                date_trunc(order_date, month) as month
                 ,supplier_id
                 ,part_id
                 ,COUNT(order_id, line_id) as parts_returned
