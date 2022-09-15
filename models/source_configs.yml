@@ -2,14 +2,13 @@ version: 2
 
 sources:
     - name: TPCH_SF1
-      database: coalesce-2022-workshop
       schema: raw_tpch
       tables:
         - name: partsupp
-        - name: supplier
-        - name: part
         - name: nation
         - name: region
         - name: orders
         - name: lineitem
         - name: customer
+        - name: part
+        - name: supplier

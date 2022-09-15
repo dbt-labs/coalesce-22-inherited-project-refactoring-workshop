@@ -8,7 +8,7 @@ select
     ps.PS_AVAILQTY      AS Num_Available 
 
 from {{ ref('EUR_LOWCOST_BRASS_SUPPLIERS') }} e
-LEFT JOIN {{ source('TPCH_SF1', 'SUPPLIER') }} s on e.S_NAME = s.S_NAME
+LEFT JOIN {{ source('TPCH_SF1', 'supplier') }} s on e.S_NAME = s.S_NAME
 LEFT JOIN
     raw_tpch.tpch_sf1.partsupp ps
 on e.P_PARTKEY = ps.PS_PARTKEY

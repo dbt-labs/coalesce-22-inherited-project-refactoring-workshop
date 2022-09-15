@@ -9,7 +9,7 @@ select customer_id,
         (select c.c_custkey as customer_id,
             c.c_name as customer_name,
             round(sum(customer_cost), 2) as purchase_total
-        from {{ source('TPCH_SF1', 'CUSTOMER') }} c
+        from {{ source('TPCH_SF1', 'customer') }} c
             left join {{ ref('order_line_items') }} oli
                 on c.c_custkey = oli.customer_id
             where item_status != 'R'

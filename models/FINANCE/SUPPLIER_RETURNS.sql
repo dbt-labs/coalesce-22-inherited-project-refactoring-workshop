@@ -38,7 +38,7 @@ SELECT
     , p.P_NAME
 FROM 
     top10s
-LEFT JOIN {{ source('TPCH_SF1', 'SUPPLIER') }} s
+LEFT JOIN {{ source('TPCH_SF1', 'supplier') }} s
     ON top10s.SUPPLIER_ID = s.S_SUPPKEY
-LEFT JOIN {{ source('TPCH_SF1', 'PART') }} p
+LEFT JOIN {{ source('TPCH_SF1', 'part') }} p
     ON top10s.PART_ID = p.P_PARTKEY
