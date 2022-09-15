@@ -12,4 +12,4 @@ sources:
         - name: region
         - name: orders
         - name: lineitem
-        - name: ccustomer
+        - name: customer
