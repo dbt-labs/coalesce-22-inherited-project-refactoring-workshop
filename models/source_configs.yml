@@ -5,11 +5,11 @@ sources:
       database: coalesce-2022-workshop
       schema: raw_tpch
       tables:
-        - name: PARTSUPP
-        - name: SUPPLIER
-        - name: PART
-        - name: NATION
-        - name: REGION
+        - name: partsupp
+        - name: supplier
+        - name: part
+        - name: nation
+        - name: region
         - name: orders
         - name: lineitem
-        - name: CUSTOMER
+        - name: ccustomer
