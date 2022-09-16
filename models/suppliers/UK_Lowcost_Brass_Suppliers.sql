@@ -10,7 +10,7 @@ select
 from {{ ref('EUR_LOWCOST_BRASS_SUPPLIERS') }} e
 LEFT JOIN {{ source('TPCH_SF1', 'supplier') }} s on e.S_NAME = s.S_NAME
 LEFT JOIN
-    raw_tpch.tpch_sf1.partsupp ps
+    `coalesce-2022-workshop`.`raw_tpch`.`partsupp` ps
 on e.P_PARTKEY = ps.PS_PARTKEY
     and s.S_SUPPKEY = ps.PS_SUPPKEY
 

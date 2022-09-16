@@ -9,5 +9,5 @@ WHERE
      AND p_size = 15 AND p_type LIKE '%BRASS'
      AND s_nationkey = n_nationkey AND n_regionkey = r_regionkey
      AND r_name = 'EUROPE' 
-     AND ps_supplycost = (SELECT min(min_supply_cost) FROM {{ ref('min_supply_cost') }} WHERE PARTKEY=p_partkey)
+     AND ps_supplycost = (SELECT min(min_supply_cost.min_supply_cost) FROM {{ ref('min_supply_cost') }} WHERE PARTKEY=p_partkey)
 ORDER BY s_acctbal DESC, n_name, s_name, p_partkey
