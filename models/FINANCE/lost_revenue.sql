@@ -20,10 +20,10 @@ rl as (
     ,c_phone 
     ,c_comment
     FROM ro left join (SELECT l.l_orderkey AS ORDER_ID, o.o_custkey AS CUSTOMER_ID, SUM(l.l_extendedprice * (1 - l.l_discount)) AS REVENUE
-        FROM {{ source('TPCH_SF1', 'lineitem') }} l LEFT JOIN coalesce-2022-workshop.raw_tpch.orders o ON l.l_orderkey = o.o_orderkey
+        FROM {{ source('TPCH_SF1', 'lineitem') }} l LEFT JOIN `coalesce-2022-workshop`.`raw_tpch`.`orders` o ON l.l_orderkey = o.o_orderkey
         WHERE l.l_returnflag = 'R' GROUP BY o.o_custkey, l.l_orderkey
     ) lo on lo.ORDER_ID = ro.o_orderkey and lo.CUSTOMER_ID = ro.c_custkey
-    LEFT JOIN {{ source('TPCH_SF1', 'customer') }} c ON c.c_custkey = lo.CUSTOMER_ID LEFT JOIN raw_tpch.tpch_sf1.nation n ON c.c_nationkey = n.n_nationkey
+    LEFT JOIN {{ source('TPCH_SF1', 'customer') }} c ON c.c_custkey = lo.CUSTOMER_ID LEFT JOIN `coalesce-2022-workshop`.`raw_tpch`.`nation` n ON c.c_nationkey = n.n_nationkey
     WHERE lo.CUSTOMER_ID is not null GROUP BY c.c_custkey,c.c_name,c.c_acctbal,c.c_phone,n.n_name,c.c_address,c.c_comment ORDER BY revenue_lost DESC
 )
 
