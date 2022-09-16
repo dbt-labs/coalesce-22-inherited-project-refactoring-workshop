@@ -9,6 +9,6 @@ FROM
 WHERE 
         item_status = 'R' 
 GROUP BY 
-        date_trunc(order_date, month)
+        month
 ORDER BY
-        date_trunc(order_date, month)
+        month
