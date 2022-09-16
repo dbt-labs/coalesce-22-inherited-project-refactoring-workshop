@@ -12,7 +12,7 @@ top10s as (
                 date_trunc(order_date, month) as month
                 ,supplier_id
                 ,part_id
-                ,COUNT(CONCAT(order_id,line_id)) as parts_returned
+                ,COUNT(order_id || line_id) as parts_returned
                 ,SUM(customer_cost) as total_revenue_lost
             FROM 
                 {{ ref('order_line_items') }}
