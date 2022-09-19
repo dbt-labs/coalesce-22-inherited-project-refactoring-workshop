@@ -48,7 +48,11 @@ joined as (
         parts.container as part_container,
         parts.retail_price as part_retail_price,
         parts.material as part_material,
-        parts.comment as part_comment
+        parts.comment as part_comment,
+
+        min(part_suppliers.supply_cost) over(
+            partition by regions.name, parts.part_id
+        ) as lowest_part_cost_in_region
     from suppliers
     left join part_suppliers
         on suppliers.supplier_id = part_suppliers.supplier_id
@@ -58,6 +62,16 @@ joined as (
         on nations.nation_id = suppliers.nation_id
     left join regions
         on regions.region_id = nations.region_id
+),
+
+enriched as (
+    select
+        *,
+        case
+            when supply_cost = lowest_part_cost_in_region
+            then true else false
+        end as is_lowest_cost
+    from joined
 )
 
-select * from joined
+select * from enriched
