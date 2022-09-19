@@ -25,7 +25,7 @@ easy to learn. It also looks nice visually!
 - **Need to Sign Up?**: Yes  
 - **Free Tier?**: Yes - up to 3000 objects  
 - **Example(s)**:  
-    - [Here’s the example](https://www.notion.so/dbtlabs/WIP-Inherited-Project-Refactoring-Lesson-Plan-3bd3973c0c624badaa63baf7e8eed011#919dfe657f96474baeff9fb5e0b7ccfd) we used in the workshop - you can copy and paste this into your own Whimsical account to get started!
+    - [Here’s the example](https://whimsical.com/existing-dag-uk-lowcost-brass-suppliers-N4xucD1d3jL3raHGaB8z49) we used in the workshop - you can copy and paste this into your own Whimsical account to get started!
 ---
 **[Mermaid Live Editor](https://mermaid.live/)**  
 This is a quick diagramming tool which puts diagrams into code so it’s easily 
