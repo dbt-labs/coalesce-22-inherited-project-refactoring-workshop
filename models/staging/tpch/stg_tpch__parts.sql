@@ -14,7 +14,13 @@ cleaned as (
         p_size as size,
         p_container as container,
         p_retailprice as retail_price,
-        p_comment as comment
+        p_comment as comment,
+
+        case 
+            when p_type like '%BRASS'
+            then 'brass'
+            else p_type
+        end as material
     from source
 )
 
