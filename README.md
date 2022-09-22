@@ -112,7 +112,7 @@ __Prerequisites__:
 </details>
 
 &nbsp;
-## You're ready to move on to the next stage!
+## :tada: You're ready to move on to the next stage! :tada:
 ![](/_resources/images/workshop_start.gif)
 
 Whoa... whoa there! You can't just go slinging at that DAG like that. 
