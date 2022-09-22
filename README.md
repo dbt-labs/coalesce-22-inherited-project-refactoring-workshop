@@ -115,7 +115,7 @@ __Prerequisites__:
 ## :tada: You're ready to move on to the next stage! :tada:
 ![](/_resources/images/workshop_start.gif)
 
-Whoa... whoa there! You can't just go slinging at that DAG like that. 
+Whoa... whoa there! You can't just go slinging at the DAG like that. 
 [Here's a walkthrough](/guide.md) to get you trained up!
 
 **Live participants:**  
