@@ -8,7 +8,7 @@ that you can't make heads or tails of their data flows. Let's be honest - it's a
 messy project and you desperately want to form a plan for cleaning it up. 
 
 dbt's already got some great material out there regarding refactoring (if you want
-to start small, you can start with the [refactoring course](https://courses.getdbt.com/courses/refactoring-sql-for-modularity).
+to start small, you can start with the [refactoring course](https://courses.getdbt.com/courses/refactoring-sql-for-modularity)).
 There's gonna be some nuances (and good solutions can only be made with experience!) - 
 isn't there a quicker way to learn?
 
