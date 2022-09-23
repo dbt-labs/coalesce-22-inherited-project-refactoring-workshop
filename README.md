@@ -9,13 +9,11 @@ messy project and you desperately want to form a plan for cleaning it up.
 
 dbt's already got some great material out there regarding refactoring (if you want
 to start small, you can start with the [refactoring course](https://courses.getdbt.com/courses/refactoring-sql-for-modularity)).
-There's gonna be some nuances (and good solutions can only be made with experience!) - 
-isn't there a quicker way to learn?
+There's gonna be some nuances - is there a quicker way to learn what to look out for?
 
-Well, we can't promise you anything, but this refactoring course is the perfect 
-start to getting some extra practice in! Part of Christine and Lauren's day-to-day
-is taming those crazy projects, and they've created this workshop to give you
-some tips and tricks for wrangling that DAG.
+This refactoring course is the perfect start to getting some extra practice in! 
+Part of Christine and Lauren's day-to-day is taming those crazy projects, and 
+they've created this workshop to give you some tips and tricks for wrangling that DAG.
 
 __Prerequisites__:
 
