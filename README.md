@@ -120,7 +120,7 @@ Whoa... whoa there! You can't just go slinging at the DAG like that.
 
 **Live participants:**  
 We're asking that you don't go hopping in to the walkthrough just yet! We'll be
-forming a party to walkthrough it live :purple_heart:.
+forming a party to practice our training together! :purple_heart:
 ## Additional Helpful Links:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
 - Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
