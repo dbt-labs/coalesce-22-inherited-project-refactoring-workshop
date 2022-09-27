@@ -1,4 +1,4 @@
-# Inherited Project Refactoring Workshop
+# 👑 Inherited Project Refactoring Workshop 👑
 Welcome to the Inherited Project Refactoring workshop of Coalesce 2022!
 
 ## About this Project
