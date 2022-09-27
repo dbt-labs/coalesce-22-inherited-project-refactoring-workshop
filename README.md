@@ -119,8 +119,7 @@ Whoa... whoa there! You can't just go slinging at the DAG like that.
 [Here's a walkthrough](https://github.com/dbt-labs/coalesce-22-inherited-project-refactoring-workshop/wiki) to get you trained up!
 
 **Live participants:**  
-We're asking that you don't go hopping in to the walkthrough just yet! We'll be 
-practicing our training together live! :purple_heart:  
+We're asking that you don't go hopping in to the walkthrough just yet! We'll be training together live! :purple_heart:  
 
 ## Additional Helpful Links:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
