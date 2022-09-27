@@ -1,7 +1,7 @@
 # 👑 Inherited Project Refactoring Workshop 👑
 Welcome to the Inherited Project Refactoring workshop of Coalesce 2022!
 
-## About this Project
+## :cat: About this Project
 You've just started working at a new job and they've been using dbt to transform
 their data (YES!). However, once you've made it into their project, you realize
 that you can't make heads or tails of their data flows. Let's be honest - it's a
@@ -16,7 +16,7 @@ start to getting that extra practice in!
 Part of Christine and Lauren's day-to-day is taming those crazy projects - they've 
 created this workshop to give you some tips and tricks for wrangling that DAG.
 
-__Prerequisites__:  
+## :white_check_mark: Prerequisites:  
 This workshop assumes that you're familiar with dbt. At a minimun you should know how to:
 - Generate documentation
 - Run commands and compile code
@@ -61,9 +61,7 @@ This workshop assumes that you're familiar with dbt. At a minimun you should kno
 
 </details>
 
-&nbsp;
-
-## Using this project
+## :toolbox: Using this project
 
 <details>
   <summary> Live participants </summary>
