@@ -16,8 +16,8 @@ start to getting that extra practice in!
 Part of Christine and Lauren's day-to-day is taming those crazy projects - they've 
 created this workshop to give you some tips and tricks for wrangling that DAG.
 
-__Prerequisites__:
-This workshop assumes that you're a bit familiar with dbt. At a minimun you should know how to:
+__Prerequisites__:  
+This workshop assumes that you're familiar with dbt. At a minimun you should know how to:
 - Generate documentation
 - Run commands and compile code
 - Create branches
