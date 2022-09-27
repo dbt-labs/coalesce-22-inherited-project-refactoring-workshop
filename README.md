@@ -116,7 +116,7 @@ __Prerequisites__:
 ![](/_resources/images/workshop_start.gif)
 
 Whoa... whoa there! You can't just go slinging at the DAG like that. 
-[Here's a walkthrough](/guide.md) to get you trained up!
+[Here's a walkthrough](https://github.com/dbt-labs/coalesce-22-inherited-project-refactoring-workshop/wiki) to get you trained up!
 
 **Live participants:**  
 We're asking that you don't go hopping in to the walkthrough just yet! We'll be 
