@@ -25,7 +25,11 @@ easy to learn. It also looks nice visually!
 - **Need to Sign Up?**: Yes  
 - **Free Tier?**: Yes - up to 3000 objects  
 - **Example(s)**:  
-    - [Here’s the example](https://whimsical.com/existing-dag-uk-lowcost-brass-suppliers-N4xucD1d3jL3raHGaB8z49) we used in the workshop - you can copy and paste this into your own Whimsical account to get started!
+  These are the links to the exercises and examples used in the in-person workshop.  
+  It’s view only, but you can copy them to your own Whimsical account to use!
+    - [Diagramming Exercise](https://whimsical.com/template-diagramming-exercise-Lpfs9DUN3E9oL4nB9GsVjz)
+    - [Decluttering Exercise](https://whimsical.com/template-decluttering-exercise-DsL7x9VgdNgLKi5ujBtVM4)
+    - [Full Refactor Example](https://whimsical.com/fully-refactored-project-coalesce-2022-inherited-project-refacto-WnRLHwFNCQrAjG2fXyQsam)
 ---
 **[Mermaid Live Editor](https://mermaid.live/)**  
 This is a quick diagramming tool which puts diagrams into code so it’s easily 
