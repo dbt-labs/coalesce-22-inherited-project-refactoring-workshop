@@ -4,5 +4,5 @@
 {{ audit_helper.compare_relations(
     a_relation=old_etl_relation,
     b_relation=dbt_relation,
-    primary_key="supplier_name || part_id"
+    primary_key="s_name || p_partkey"
 ) }}

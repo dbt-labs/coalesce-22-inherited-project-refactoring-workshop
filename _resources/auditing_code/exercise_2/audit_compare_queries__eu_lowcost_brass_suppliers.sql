@@ -21,5 +21,5 @@
 {{ audit_helper.compare_queries(
     a_query=old_query,
     b_query=new_query,
-    primary_key="s_name || p_name"
+    primary_key="s_name || p_partkey"
 ) }}
