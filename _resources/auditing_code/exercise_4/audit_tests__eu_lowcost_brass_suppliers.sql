@@ -1,26 +1,9 @@
-{% set old_fct_orders_query %}
-  select * from {{ ref('EUR_LOWCOST_BRASS_SUPPLIERS') }}
-{% endset %}
+{% set old_etl_relation=ref('EUR_LOWCOST_BRASS_SUPPLIERS') -%}
+{% set dbt_relation=ref('report__eu_lowcost_brass_suppliers_size_15') %}
 
-{% set new_fct_orders_query %}
-  select
-    part_name as p_name, 
-    part_size as p_size, 
-    part_retail_price as p_retailprice, 
-    supplier_account_balance as s_acctbal, 
-    supplier_name as s_name, 
-    nation as n_name, 
-    part_id as p_partkey, 
-    part_manufacturer as p_mfgr, 
-    supplier_address as s_address, 
-    supplier_phone_number as s_phone, 
-    supplier_comment as s_comment
-  from {{ ref('report__eu_lowcost_brass_suppliers_size_15') }}
-{% endset %}
-
-{{ audit_helper.compare_queries(
-    a_query=old_fct_orders_query,
-    b_query=new_fct_orders_query,
+{{ audit_helper.compare_relations(
+    a_relation=old_etl_relation,
+    b_relation=dbt_relation,
     primary_key="s_name || p_partkey",
     summarize=false
 ) }}
