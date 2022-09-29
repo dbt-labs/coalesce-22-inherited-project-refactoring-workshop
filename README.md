@@ -1,7 +1,7 @@
 # 👑 Inherited Project Refactoring Workshop 👑
 Welcome to the Inherited Project Refactoring workshop of Coalesce 2022!
 
-## :cat: About this Project
+## :mage: About this Project :cat:
 You've just started working at a new job and they've been using dbt to transform
 their data (YES!). However, once you've made it into their project, you realize
 that you can't make heads or tails of their data flows. Let's be honest - it's a
