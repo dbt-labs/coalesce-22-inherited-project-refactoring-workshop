@@ -61,26 +61,26 @@ This workshop assumes that you're familiar with dbt. At a minimun you should kno
 
 </details>
 
-## :toolbox: Using this project
+## :toolbox: Setup
 
 <details>
   <summary> Live participants </summary>
 
 1. Navigate to the `Coalesce 2022 Workshop - Refactoring dbt Cloud` account.
-2. Set up your IDE:  
-   There are two ways to ensure dbt has everything it needs so you can work in your development environment:
-   1. Via the IDE
-      1. Navigate to the IDE by clicking `Develop`
-      2. Follow the prompt to your credential settings and hit `edit` to fill in the required information.
-   2. Via Settings
-      1. Click on your user profile in the top left-hand corner and click `Profile Settings`
-      2. Navigate to `Credentials` > `Analytics` > Hit `Edit` to fill in the required information.
+2. Configure your development credentials:  
+   1. Click on your user profile in the top left-hand corner and click `Profile Settings`
+   2. Scroll to the "Credentials" section.
+   3. Click on `Analytics`
+   4. Hit the `Edit` button in the lower right hand corner.
+   5. Change these configurations:
+   |||
+   |-|-|
+   |**Dataset**| Set this to `dbt_` your first initial + last name. Example: `dbt_cberger` |
+   |**Target Name**| Set this to `dev` |
+   6. Hit `Save`
 
-3. Set up the required information:  
-`Dataset`: This should be `dbt_` + your first initial + your last name. Example: `dbt_cberger`  
-`Threads`: This is how many concurrent queries can be sent to BigQuery. 
-
-4. Confirm your setup:  
+3. Confirm your setup:  
+   1. Navigate to the IDE by clicking on the `Develop` tab in the upper right-hand corner
    Try running the following commands:
    ```bash
    $ dbt run
@@ -96,11 +96,13 @@ This workshop assumes that you're familiar with dbt. At a minimun you should kno
 <details>
   <summary> All others </summary>
 
-1. Ensure your project has been configured with the connection credentials and
+1. Set up your dbt Project    
+   - [dbt Cloud Setup](https://docs.getdbt.com/guides/getting-started)
+   - [dbt Core Setup](https://docs.getdbt.com/guides/getting-started/learning-more/getting-started-dbt-core)
+2. Ensure your project has been configured with your connection credentials and
    [dbt profile configurations](https://docs.getdbt.com/dbt-cli/configure-your-profile).
-   The setup steps in the Prerequisites section will guide you through this.
-
-2. Confirm your setup:  
+   The setup above should guide you through this, but it's always good to double check!
+3. Confirm your setup:  
    Try running the following commands:
    ```bash
    $ dbt run
