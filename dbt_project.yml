@@ -20,3 +20,4 @@ models:
   coalesce_22_inherited_project_refactoring_workshop:
     marts:
       materialized: table
+
