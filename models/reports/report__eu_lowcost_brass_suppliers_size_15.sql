@@ -5,19 +5,19 @@ eu_parts_filtered as (
     where part_size = 15
 ),
 
-report as (
+report_renaming as (
     select
-        part_name, 
-        part_size, 
-        part_retail_price, 
-        supplier_account_balance, 
-        supplier_name,
-        nation, 
-        part_id, 
-        part_manufacturer, 
-        supplier_address, 
-        supplier_phone_number, 
-        supplier_comment
+        part_name as p_name, 
+        part_size as p_size, 
+        part_retail_price as p_retailprice, 
+        supplier_account_balance as s_acctbal, 
+        supplier_name as s_name, 
+        nation as n_name, 
+        part_id as p_partkey, 
+        part_manufacturer as p_mfgr, 
+        supplier_address as s_address, 
+        supplier_phone_number as s_phone, 
+        supplier_comment as s_comment
     from eu_parts_filtered
     order by 
         supplier_account_balance desc, 
@@ -26,4 +26,4 @@ report as (
         part_id
 )
 
-select * from report
+select * from report_renaming
