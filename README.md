@@ -83,7 +83,9 @@ This workshop assumes that you're familiar with dbt. At a minimun you should kno
   
    6. Hit `Save`
 
-3. Confirm your setup:  
+3. Run `dbt deps` to install dependencies.
+
+4. Confirm your setup:  
    1. Navigate to the IDE by clicking on the `Develop` tab in the upper right-hand corner
    2. Try running the following commands:
      ```bash
@@ -131,8 +133,10 @@ This workshop assumes that you're familiar with dbt. At a minimun you should kno
      
    - If you didn't setup BigQuery, load the data from the [`_resources/tpch_dataset`](/_resources/tpch_dataset/) into your warehouse.  
      You will need to update the `_sources.yml` file with the location of your data.
+
+5. Run `dbt deps` to install dependencies.
    
-5. Confirm your setup:  
+6. Confirm your setup:  
    Try running the following commands:
    ```bash
    $ dbt run
