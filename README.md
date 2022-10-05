@@ -17,7 +17,7 @@ Part of Christine and Lauren's day-to-day is taming those crazy projects - they'
 created this workshop to give you some tips and tricks for wrangling that DAG.
 
 ## :white_check_mark: Prerequisites:  
-This workshop assumes that you're familiar with dbt. At a minimun you should know how to:
+This workshop assumes that you're familiar with dbt. At a minimum you should know how to:
 - Generate documentation
 - Run commands and compile code
 - Create branches
