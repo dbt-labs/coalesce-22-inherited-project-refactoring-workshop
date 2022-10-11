@@ -13,8 +13,8 @@ unless you've traveled it numerous times. This refactoring workshop focuses on t
 roadmap for refactoring, and is the perfect start to getting that extra practice in!  
 
 Part of Christine and Lauren's day-to-day is taming those crazy projects - they've 
-created this workshop to give you a plan, some tips and tricks, and some leveling up 
-advice for wrangling those DAGs!
+created this workshop to teach you the art of planning, show you some tips and tricks, 
+and give you some leveling-up advice for wrangling those DAGs!
 
 ## :white_check_mark: Prerequisites:  
 This workshop assumes that you're familiar with dbt. At a minimum you should know how to:
