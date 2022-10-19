@@ -8,16 +8,16 @@ that you can't make heads or tails of their data flows. Let's be honest - it's a
 messy project and you desperately want to form a plan for cleaning it up. 
 
 dbt's already got some great material out there regarding refactoring (if you want
-to start small, you can start with the [refactoring course](https://courses.getdbt.com/courses/refactoring-sql-for-modularity)).
-The road to get from where you are to where you need to be can be hard navigate
-unless you've traveled it numerous times, and this refactoring workshop is the perfect 
-start to getting that extra practice in!  
+to start with hands-on-code refactoring, you can start with the [refactoring course](https://courses.getdbt.com/courses/refactoring-sql-for-modularity)), but the road to get from where you are to where you need to be can be hard navigate
+unless you've traveled it numerous times. This refactoring workshop focuses on the 
+roadmap for refactoring, and is the perfect start to getting that extra practice in!  
 
 Part of Christine and Lauren's day-to-day is taming those crazy projects - they've 
-created this workshop to give you some tips and tricks for wrangling that DAG.
+created this workshop to teach you the art of planning, show you some tips and tricks, 
+and give you some leveling-up advice for wrangling those DAGs!
 
 ## :white_check_mark: Prerequisites:  
-This workshop assumes that you're familiar with dbt. At a minimun you should know how to:
+This workshop assumes that you're familiar with dbt. At a minimum you should know how to:
 - Generate documentation
 - Run commands and compile code
 - Create branches
@@ -151,7 +151,7 @@ This workshop assumes that you're familiar with dbt. At a minimun you should kno
 
 &nbsp;
 ## :tada: You're ready to move on to the next stage! :tada:
-![](/_resources/images/workshop_start.gif)
+![](/.github/gifs/workshop_start.gif)
 
 Whoa... whoa there! You can't just go slinging at the DAG like that. 
 [Here's a walkthrough](https://github.com/dbt-labs/coalesce-22-inherited-project-refactoring-workshop/wiki) to get you trained up!
