@@ -17,90 +17,44 @@ created this workshop to teach you the art of planning, show you some tips and t
 and give you some leveling-up advice for wrangling those DAGs!
 
 ## :white_check_mark: Prerequisites:  
+
+**Skillset**  
 This workshop assumes that you're familiar with dbt. At a minimum you should know how to:
 - Generate documentation
 - Run commands and compile code
 - Create branches
 
-<details>
-  <summary> Live participants </summary>
-  
-  For the workshop, you will be given access to the dbt Cloud account with all the
-  necessary prerequisites.
+**Resources**
 
-</details>
+1. *A Repository*   
+   Ideally, with the files and folders contained in this workshop. To make a copy,
+   [fork this repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
+2. *dbt*  
+   Using dbt Cloud vs. dbt Core doesn't matter. You'll specifically want to know how to:
+   - [install packages](https://docs.getdbt.com/docs/building-a-dbt-project/package-management)
+   - [generate and view documentation](https://docs.getdbt.com/docs/building-a-dbt-project/documentation#generating-project-documentation)
+   - [use selection syntax](https://docs.getdbt.com/reference/node-selection/syntax)
+   - [upgrade your dbt version](https://docs.getdbt.com/guides/migration/versions/upgrading-to-v1.3), if needed (This project uses v1.3)
 
-<details>
-  <summary> All others </summary>
+   To setup dbt:
+   - [dbt Cloud Setup](https://docs.getdbt.com/guides/getting-started)
+   - [dbt Core Setup](https://docs.getdbt.com/guides/getting-started/learning-more/getting-started-dbt-core)
+3. *Some Data*  
+   This project is written on top of [BigQuery](https://cloud.google.com/bigquery)
+   and uses the publicly available [TPC-H data set](https://www.tpc.org/tpch/).
+   A truncated version of the data set has been included in this project as CSV files, located in the [_resources](/_resources/tpch_dataset/) folder.
 
-  1. *A Repository*   
-     Ideally, with the files and folders contained in this workshop. To make a copy,
-     [fork this repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
-  2. *dbt*  
-     Using dbt Cloud vs. dbt Core doesn't matter. You'll specifically want to know how to:
-     - [install packages](https://docs.getdbt.com/docs/building-a-dbt-project/package-management)
-     - [generate and view documentation](https://docs.getdbt.com/docs/building-a-dbt-project/documentation#generating-project-documentation)
-     - [use selection syntax](https://docs.getdbt.com/reference/node-selection/syntax)
-     - [upgrade your dbt version](https://docs.getdbt.com/guides/migration/versions/upgrading-to-v1.3), if needed (This project uses v1.3)
+   If you don't have some data or a warehouse yet, don't worry - the setup will guide you through setting up a free BigQuery account and loading the 
+   data for this project. Here are some resources to reference, just in case:  
+   - [Instructions for setting up a free BigQuery account](https://docs.getdbt.com/guides/getting-started/getting-set-up/setting-up-bigquery)  
+   - [Instructions for loading CSV files into BigQuery](https://cloud.google.com/bigquery/docs/samples/bigquery-load-table-gcs-csv)  
+   - [Starter instructions](https://relational.fit.cvut.cz/dataset/TPCH) for accessing the TPC-H dataset yourself
 
-     To setup dbt:
-     - [dbt Cloud Setup](https://docs.getdbt.com/guides/getting-started)
-     - [dbt Core Setup](https://docs.getdbt.com/guides/getting-started/learning-more/getting-started-dbt-core)
-  3. *Some Data*  
-     This project is written on top of [BigQuery](https://cloud.google.com/bigquery)
-     and uses the publicly available [TPC-H data set](https://www.tpc.org/tpch/).
-     A truncated version of the data set has been included in this project as CSV files, located in the [_resources](/_resources/tpch_dataset/) folder.
-      
-     If you don't have some data or a warehouse yet, don't worry - the setup will guide you through setting up a free BigQuery account and loading the 
-     data for this project. Here are some resources to reference, just in case:  
-     - [Instructions for setting up a free BigQuery account](https://docs.getdbt.com/guides/getting-started/getting-set-up/setting-up-bigquery)  
-     - [Instructions for loading CSV files into BigQuery](https://cloud.google.com/bigquery/docs/samples/bigquery-load-table-gcs-csv)  
-     - [Starter instructions](https://relational.fit.cvut.cz/dataset/TPCH) for accessing the TPC-H dataset yourself
-   
-     **Note**:  
-     We don't suggest seeding the CSV files. Though they are truncated, 
-     they still contain a significant amount of rows.
-
-</details>
+   **Note**:  
+   We don't suggest seeding the CSV files. Though they are truncated, 
+   they still contain a significant amount of rows.
 
 ## :toolbox: Setup
-
-<details>
-  <summary> Live participants </summary>
-
-1. Navigate to the `Coalesce 2022 Workshop - Refactoring dbt Cloud` account.
-2. Configure your development credentials:  
-   1. Click on your user profile in the top left-hand corner and click `Profile Settings`
-   2. Scroll to the "Credentials" section.
-   3. Click on `Analytics`
-   4. Hit the `Edit` button in the lower right hand corner.
-   5. Change these configurations:  
-  
-     |||
-     |-|-|
-     |**Dataset**| Set this to `dbt_` your first initial + last name. Example: `dbt_cberger` |
-     |**Target Name**| Set this to `dev` |
-  
-   6. Hit `Save`
-
-3. Run `dbt deps` to install dependencies.
-
-4. Confirm your setup:  
-   1. Navigate to the IDE by clicking on the `Develop` tab in the upper right-hand corner
-   2. Try running the following commands:
-     ```bash
-     $ dbt run
-     $ dbt test
-     ```
-     or alternatively:
-     ```bash
-     $ dbt build
-     ```
-
-</details>
-
-<details>
-  <summary> All others </summary>
 
 1. [Fork this repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo).
 2. Set up your dbt Project    
@@ -147,17 +101,12 @@ This workshop assumes that you're familiar with dbt. At a minimum you should kno
    $ dbt build
    ```
 
-</details>
-
 &nbsp;
 ## :tada: You're ready to move on to the next stage! :tada:
 ![](/.github/gifs/workshop_start.gif)
 
 Whoa... whoa there! You can't just go slinging at the DAG like that. 
 [Here's a walkthrough](https://github.com/dbt-labs/coalesce-22-inherited-project-refactoring-workshop/wiki) to get you trained up!
-
-**Live participants:**  
-We're asking that you don't go hopping in to the walkthrough just yet! We'll be training together live! :purple_heart:  
 
 ## Additional Helpful Links:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
